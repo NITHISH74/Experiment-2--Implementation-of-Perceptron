@@ -17,10 +17,12 @@ Perceptron requires linearly separable samples to achieve convergence.
 ## The Math of Perceptron:
 
 * If we represent samples as vectors of size n, where ‘n’ is the number of its features, a Perceptron can be modeled through the composition of two functions. The first one f(x) maps the input features  ‘x’  vector to a scalar value, shifted by a bias ‘b’.
+
 ![image](https://user-images.githubusercontent.com/94164665/230730755-4ee0d921-07c2-4c90-804c-2ce509a74729.png)
 
 
-* A threshold function, usually __Heaviside or sign functions__, maps the scalar value to a binary output:
+* A threshold function, usually __Heaviside or sign functions__, maps the scalar value to a binary output.
+
 ![image](https://user-images.githubusercontent.com/94164665/230730782-802ef023-669f-4d33-b77f-6a060a2aa06a.png)
 
 * Indeed if the neuron output is exactly zero it cannot be assumed that the sample belongs to the first sample since it lies on the boundary between the two classes. Nonetheless for the sake of simplicity,ignore this situation.
@@ -31,14 +33,19 @@ Perceptron requires linearly separable samples to achieve convergence.
 1. Importing the libraries
 2. Importing the dataset
 3. Plot the data to verify the linear separable dataset and consider only two classes
-4. Convert the data set to scale the data to uniform range by using Feature scaling
-![image](https://user-images.githubusercontent.com/94164665/230729645-0a70cd2d-32c9-4598-b976-4d518c973cc0.png)5. Split the dataset for training and testing
+4. Convert the data set to scale the data to uniform range by using Feature scaling.
+
+![image](https://user-images.githubusercontent.com/94164665/230729645-0a70cd2d-32c9-4598-b976-4d518c973cc0.png)
+
+5. Split the dataset for training and testing
 6. Define the input vector ‘X’ from the training dataset
 7. Define the desired output vector ‘Y’ scaled to +1 or -1 for two classes C1 and C2
 8. Assign Initial Weight vector ‘W’ as 0 as the dimension of ‘X’
 9. Assign the learning rate
 10. For ‘N ‘ iterations ,do the following:
+
 ![image](https://user-images.githubusercontent.com/94164665/230729660-29c127c3-129f-481e-8a2e-aeacc5bd798b.png)
+
 11. Plot the error for each iteration 
 12. Print the accuracy.
 
