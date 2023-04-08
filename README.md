@@ -30,18 +30,18 @@ Perceptron requires linearly separable samples to achieve convergence.
 
 
 ## ALGORITHM:
-1. Importing the libraries
-2. Importing the dataset
-3. Plot the data to verify the linear separable dataset and consider only two classes
-4. Convert the data set to scale the data to uniform range by using Feature scaling.
+01. Importing the libraries
+02. Importing the dataset
+03. Plot the data to verify the linear separable dataset and consider only two classes
+04. Convert the data set to scale the data to uniform range by using Feature scaling.
 
 ![image](https://user-images.githubusercontent.com/94164665/230729645-0a70cd2d-32c9-4598-b976-4d518c973cc0.png)
 
-5. Split the dataset for training and testing
-6. Define the input vector ‘X’ from the training dataset
-7. Define the desired output vector ‘Y’ scaled to +1 or -1 for two classes C1 and C2
-8. Assign Initial Weight vector ‘W’ as 0 as the dimension of ‘X’
-9. Assign the learning rate
+05. Split the dataset for training and testing
+06. Define the input vector ‘X’ from the training dataset
+07. Define the desired output vector ‘Y’ scaled to +1 or -1 for two classes C1 and C2
+08. Assign Initial Weight vector ‘W’ as 0 as the dimension of ‘X’
+09. Assign the learning rate
 10. For ‘N ‘ iterations ,do the following:
 
 ![image](https://user-images.githubusercontent.com/94164665/230729660-29c127c3-129f-481e-8a2e-aeacc5bd798b.png)
